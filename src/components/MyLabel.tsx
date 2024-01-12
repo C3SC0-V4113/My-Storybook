@@ -5,9 +5,9 @@ interface Props {
   label: string;
   /**Label Size */
   size?: "normal" | "h1" | "h2" | "h3";
-  /**If wants to be all caps */
+  /**If wants to be all capitalized */
   allCaps?: boolean;
-  /**Predefined colors for text */
+  /**Predefined colors for label */
   color?: "text-primary" | "text-secondary" | "text-tertiary";
   /**Hexadecimal code for text color */
   fontColor?: string;
@@ -22,7 +22,7 @@ export const MyLabel = ({
 }: Props) => {
   return (
     <span
-      className={size + color ? color : ""}
+      className={`${size} ${color ? color : ""}`}
       style={
         fontColor
           ? {
