@@ -11,14 +11,19 @@ const meta = {
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
+  //   argTypes: {
+  //     size: {
+  //       control: "select",
+  //       options: ["normal", "h1", "h2", "h3"],
+  //     },
+  //   },
 } satisfies Meta<typeof MyLabel>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
-  //   args: {
-  //     primary: true,
-  //     label: "Button",
-  //   },
+  args: {
+    label: "Hello World",
+  },
 };
