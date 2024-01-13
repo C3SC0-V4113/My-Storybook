@@ -11,6 +11,8 @@ interface Props {
   color?: "text-primary" | "text-secondary" | "text-tertiary";
   /**Hexadecimal code for text color */
   fontColor?: string;
+  /**Color personalizado de fondo */
+  backgroundColor?: string;
 }
 
 export const MyLabel = ({
@@ -19,6 +21,7 @@ export const MyLabel = ({
   allCaps = false,
   color,
   fontColor,
+  backgroundColor = "transparent",
 }: Props) => {
   return (
     <span
@@ -27,8 +30,9 @@ export const MyLabel = ({
         fontColor
           ? {
               color: fontColor,
+              backgroundColor,
             }
-          : {}
+          : { backgroundColor }
       }
     >
       {allCaps ? label.toUpperCase() : label}
