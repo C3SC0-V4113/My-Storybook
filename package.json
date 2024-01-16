@@ -24,12 +24,13 @@
   },
   "scripts": {
     "dev": "npm run storybook",
-    "build": "tsc",
+    "build": "yarn clean && tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_4df13debdae2bef"
+    "chromatic": "npx chromatic --project-token=chpt_4df13debdae2bef",
+    "clean": "rimraf dist/"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -54,6 +55,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "rimraf": "^5.0.5",
     "storybook": "7.6.7",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
