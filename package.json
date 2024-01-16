@@ -1,6 +1,6 @@
 {
   "name": "fv-custom-components",
-  "version": "0.0.3-rc2",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -72,6 +72,5 @@
     "vite": "^5.0.8"
   },
   "packageManager": "yarn@4.0.2",
-  "readme": "ERROR: No README data found!",
-  "_id": "my-storybook@0.0.0"
+  "readme": "ERROR: No README data found!"
 }
