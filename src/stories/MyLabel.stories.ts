@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { MyLabel } from "../components/MyLabel";
+import { MyLabel, type MyLabelProps } from "../components/MyLabel";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: Meta<MyLabelProps> = {
   title: "UI/Labels/MyLabel",
   component: MyLabel,
   parameters: {
