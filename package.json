@@ -34,7 +34,8 @@
     "chromatic": "npx chromatic --project-token=chpt_4df13debdae2bef",
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
-    "push:npm": "np"
+    "push:npm": "np",
+    "test": "echo 'Hasn't started tests yet"
   },
   "peerDependencies": {
     "react": "^18.2.0",
